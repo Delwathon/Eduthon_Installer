@@ -9,22 +9,23 @@
 - [Installation](#installation)
 - [Routes](#routes)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [Help](#help)
+<!-- - [Contributing](#contributing)
+- [Help](#help) -->
 - [Screenshots](#screenshots)
 - [License](#license)
 
 ## About
 
-Do you want your clients to be able to install a Laravel project just like they do with WordPress or any other CMS?
+We want our clients to be able to install a our Eduthon project just like they do with WordPress or any other CMS?
 This Laravel package allows users who don't use Composer, SSH etc to install your application just by following the setup wizard.
 The current features are :
 
+- Check For Purchase Code Authenticity.
 - Check For Server Requirements.
 - Check For Folders Permissions.
 - Ability to set database information.
-	- .env text editor
-	- .env form wizard
+	<!-- - .env text editor -->
+- .env form wizard
 - Migrate The Database.
 - Seed The Tables.
 
@@ -84,14 +85,14 @@ Register the package with laravel in `config/app.php` under `providers` with the
 |`resources/views/vendor/installer`|This folder contains the HTML code for your installer, it is 100% customizable, give it a look and see how nice/clean it is.|
 |`resources/lang/en/installer_messages.php`|This file holds all the messages/text, currently only English is available, if your application is in another language, you can copy/past it in your language folder and modify it the way you want.|
 
-## Contributing
+<!-- ## Contributing
 
 * If you have any suggestions please let me know : https://github.com/Delwathon/LaravelInstaller/pulls.
-* Please help us provide more languages for this awesome package please send a pull request https://github.com/Delwathon/LaravelInstaller/pulls.
+* Please help us provide more languages for this awesome package please send a pull request https://github.com/Delwathon/LaravelInstaller/pulls. -->
 
-## Help
+<!-- ## Help
 
-* Cannot figure it out? Need more help? Here is a video tutorial: [Laravel Installer by Devdojo](https://www.youtube.com/watch?v=Jput5doFYLg)
+* Cannot figure it out? Need more help? Here is a video tutorial: [Laravel Installer by Devdojo](https://www.youtube.com/watch?v=Jput5doFYLg) -->
 
 ## Screenshots
 
@@ -106,7 +107,7 @@ Register the package with laravel in `config/app.php` under `providers` with the
 ![Laravel web installer | Step 4 Wizard 3](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/4b-environment-wizard-3.jpg)
 ![Laravel web installer | Step 5](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/5-final.jpg)
 
-###### Updater
+<!-- ###### Updater
 ![Laravel web updater | Step 1](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/update/1-welcome.jpg)
 ![Laravel web updater | Step 2](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/update/2-updates.jpg)
 ![Laravel web updater | Step 3](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/update/3-finished.jpg)
@@ -123,4 +124,4 @@ It’s now common knowledge that one of the best tools to tackle the climate cri
 
 You can buy trees at [offset.earth/treeware](https://plant.treeware.earth/rashidlaasri/LaravelInstaller)
 
-Read more about Treeware at https://treeware.earth
+Read more about Treeware at https://treeware.earth -->
