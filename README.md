@@ -12,7 +12,7 @@
 <!-- - [Contributing](#contributing)
 - [Help](#help) -->
 - [Screenshots](#screenshots)
-- [License](#license)
+<!-- - [License](#license) -->
 
 ## About
 
@@ -97,15 +97,14 @@ Register the package with laravel in `config/app.php` under `providers` with the
 ## Screenshots
 
 ###### Installer
-![Laravel web installer | Step 1](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/1-welcome.jpg)
-![Laravel web installer | Step 2](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/2-requirements.jpg)
-![Laravel web installer | Step 3](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/3-permissions.jpg)
-![Laravel web installer | Step 4 Menu](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/4-environment.jpg)
-![Laravel web installer | Step 4 Classic](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/4a-environment-classic.jpg)
-![Laravel web installer | Step 4 Wizard 1](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/4b-environment-wizard-1.jpg)
-![Laravel web installer | Step 4 Wizard 2](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/4b-environment-wizard-2.jpg)
-![Laravel web installer | Step 4 Wizard 3](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/4b-environment-wizard-3.jpg)
-![Laravel web installer | Step 5](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/install/5-final.jpg)
+![Laravel web installer | Step 1](https://i.ibb.co/6b3s0FV/Delwathon-Installer.png)
+![Laravel web installer | Step 2](https://i.ibb.co/S7bhtF6/Delwathon-Installer-1.png)
+![Laravel web installer | Step 3](https://i.ibb.co/ThrR6b2/Delwathon-Installer-2.png)
+![Laravel web installer | Step 4](https://i.ibb.co/yqGwVTc/Delwathon-Installer-3.png)
+![Laravel web installer | Step 5](https://i.ibb.co/HYZh9BC/Delwathon-Installer-4.png)
+![Laravel web installer | Step 6](https://i.ibb.co/YTrNCLZ/Delwathon-Installer-5.png)
+![Laravel web installer | Step 7](https://i.ibb.co/j44NzBt/Delwathon-Installer-6.png)
+![Laravel web installer | Step 58](https://i.ibb.co/23m8yk8/Delwathon-Installer-7.png)
 
 <!-- ###### Updater
 ![Laravel web updater | Step 1](https://s3-us-west-2.amazonaws.com/github-project-images/eduthon-installer/update/1-welcome.jpg)
