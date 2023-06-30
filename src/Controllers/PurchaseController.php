@@ -58,8 +58,8 @@ class PurchaseController extends Controller
                     $purchaseCodeResponse = $purchaseChecker->apiPostRequestCall(config('installer.purchase.api.verify'), $header, $data);
                     if ($purchaseCodeResponse->message === 'success') {
                         // Store the pc and sk in cookies
-                        setcookie('pc', json_encode($purchaseChecker->getPurchaseCode()), time()+60*60*24*365);
-                        setcookie('sk', json_encode($purchaseChecker->getSecretKey()), time()+60*60*24*365);
+                        setcookie('pc', json_encode($purchaseChecker->getPurchaseCode()), time()+60*60, '/', NULL, 0 );
+                        setcookie('sk', json_encode($purchaseChecker->getSecretKey()), time()+60*60, '/', NULL, 0 );
                         
                         return $redirect->route('LaravelInstaller::requirements');
                     } else {

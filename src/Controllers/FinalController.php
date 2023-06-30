@@ -95,10 +95,6 @@ class FinalController extends Controller
 
         event(new LaravelInstallerFinished);
 
-        setcookie("application_details", "", time() - 3600);
-        setcookie("pc", "", time() - 3600);
-        setcookie("sk", "", time() - 3600);
-
         return view('vendor.installer.finished', compact('finalMessages', 'finalStatusMessage', 'finalEnvFile'));
     }
 }

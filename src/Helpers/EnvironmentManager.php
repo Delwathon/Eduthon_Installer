@@ -122,11 +122,11 @@ class EnvironmentManager
         'MAIL_ENCRYPTION='.$request->mail_encryption."\n\n".
         'PUSHER_APP_ID='.$request->pusher_app_id."\n".
         'PUSHER_APP_KEY='.$request->pusher_app_key."\n".
-        'PUSHER_APP_SECRET='.$request->pusher_app_secret."\n".
+        'PUSHER_APP_SECRET='.$request->pusher_app_secret."\n\n".
         'PAYSTACK_PUBLIC_KEY='."\n".
         'PAYSTACK_SECRET_KEY='."\n".
         'PAYSTACK_PAYMENT_URL=https://api.paystack.co'."\n".
-        'MERCHANT_EMAIL='."\n".
+        'MERCHANT_EMAIL='."\n\n".
         'EDUTHON_PURCHASE_CODE='."\n".
         'EDUTHON_SECRET_KEY=';
 
