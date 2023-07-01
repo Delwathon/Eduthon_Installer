@@ -1,15 +1,11 @@
 {
     "name": "delwathon/eduthon-installer",
-    "description": "Laravel web installer",
+    "description": "Eduthon product installer",
     "license": "MIT",
     "authors": [
         {
-            "name": "Rachid Laasri",
-            "email": "rashidlaasri@gmail.com"
-        },
-        {
-            "name": "Jeremy Kenedy",
-            "email": "jeremykenedy@gmail.com"
+            "name": "Delwathon IT Solutions",
+            "email": "dev@delwathon.com"
         }
     ],
     "require": {
