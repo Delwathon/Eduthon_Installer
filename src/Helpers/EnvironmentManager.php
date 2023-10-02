@@ -127,8 +127,8 @@ class EnvironmentManager
         'PAYSTACK_SECRET_KEY='."\n".
         'PAYSTACK_PAYMENT_URL=https://api.paystack.co'."\n".
         'MERCHANT_EMAIL='."\n\n".
-        'EDUTHON_PURCHASE_CODE='."\n".
-        'EDUTHON_SECRET_KEY=';
+        'EDUTHON_PURCHASE_CODE='.$_COOKIE['pc']."\n".
+        'EDUTHON_SECRET_KEY='.$_COOKIE['sk'];
 
         try {
             file_put_contents($this->envPath, $envFileData);

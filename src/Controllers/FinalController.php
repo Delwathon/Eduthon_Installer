@@ -90,9 +90,6 @@ class FinalController extends Controller
         $finalStatusMessage = $fileManager->update();
         $finalEnvFile = $environment->getEnvContent();
 
-        config(['app.eduthon.purchase_code' => json_decode($_COOKIE['pc'])]);
-        config(['app.eduthon.secret_key' => json_decode($_COOKIE['sk'])]);
-
         event(new LaravelInstallerFinished);
 
         return view('vendor.installer.finished', compact('finalMessages', 'finalStatusMessage', 'finalEnvFile'));
