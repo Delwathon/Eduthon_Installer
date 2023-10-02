@@ -56,6 +56,23 @@ class DatabaseManager
             return $this->response($e->getMessage(), 'error', $outputLog);
         }
 
+        return $this->passport($outputLog);
+    }
+
+        /**
+     * Generate passport keys after migrate:fresh.
+     *
+     * @param \Symfony\Component\Console\Output\BufferedOutput $outputLog
+     * @return array
+     */
+    private function passport(BufferedOutput $outputLog)
+    {
+        try {
+            Artisan::call('passport:install', ['--force' => true], $outputLog);
+        } catch (Exception $e) {
+            return $this->response($e->getMessage(), 'error', $outputLog);
+        }
+
         return $this->response(trans('installer_messages.final.finished'), 'success', $outputLog);
     }
 
