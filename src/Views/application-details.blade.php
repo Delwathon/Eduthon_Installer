@@ -59,7 +59,7 @@
                                 </label>
                                 <input type="text" name="app_url" class="sec8in1" id="app_url"
                                     value="{{ old('app_url') }}"
-                                    placeholder="{{ trans('installer_messages.application_details.menu.form.app_url_placeholder') }}" />
+                                    placeholder="{{ trans('installer_messages.application_details.menu.form.client_url_placeholder') }}" />
                                 @if ($errors->has('app_url'))
                                     <span class="error-block">
                                         <i class="bx bxs-error" aria-hidden="true"></i>

@@ -173,7 +173,7 @@
                             </label>
                             <input type="url" name="app_url" class="sec5in1" id="app_url"
                                 value="{{ url('/') }}"
-                                placeholder="{{ trans('installer_messages.environment.wizard.form.app_url_placeholder') }}" />
+                                placeholder="{{ trans('installer_messages.environment.wizard.form.backend_url_placeholder') }}" />
                             @if ($errors->has('app_url'))
                                 <span class="error-block">
                                     <i class="bx bxs-error" aria-hidden="true"></i>
