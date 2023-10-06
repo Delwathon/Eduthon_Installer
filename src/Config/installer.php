@@ -59,8 +59,8 @@ return [
     */
     'purchase' => [
         'api' => [
-            'authenticate' => 'https://eduthonpc.delwathon.com/api/authenticate',
-            'verify' => 'https://eduthonpc.delwathon.com/api/verify',
+            'authenticate' => 'https://engine.delwathon.com/api/authenticate',
+            'verify' => 'https://engine.delwathon.com/api/verify',
         ],
         'form' => [
             'rules' => [

@@ -27,6 +27,11 @@ class FinalController extends Controller
     public function finish(InstalledFileManager $fileManager, FinalInstallManager $finalInstall, EnvironmentManager $environment)
     {
         $details = json_decode($_COOKIE['application_details']);
+        if($details->owner_gender === 'Male') {
+            $image = $details->app_url +'images/avatar/avatar-male.jpg';
+        } elseif($details->owner_gender === 'Female') {
+            $image = $details->app_url +'images/avatar/avatar-female.jpg';
+        }
 
         GlobalSetting::create([
             'name' => $details->school_name,
@@ -37,19 +42,21 @@ class FinalController extends Controller
             'mobile' => $details->support_phone,
             'email' => $details->support_email,
             'currency_id' => $details->currency,
+            'app_url' => $details->app_url
         ]);
 
         $user = User::create([
             'firstname' => $details->owner_fname,
             'lastname' => $details->owner_lname,
             'email' => $details->app_email,
-            'password' => Hash::make($details->app_password)
+            'password' => Hash::make($details->app_password),
+            'image' => $image
         ]);
 
         Employee::create([
             'user_id' => $user->id,
             'gender' => $details->owner_gender,
-            'mobile' => $details->owner_phone,
+            'mobile' => $details->owner_phone
         ]);
         $user->assignRole(2);
 
@@ -62,7 +69,7 @@ class FinalController extends Controller
         $s_session = intval($session[0]);
         $e_session = intval($session[1]);
 
-        for ($i = 1; $i < 10; $i++) {
+        for ($i = 1; $i < 5; $i++) {
             Session::create([
                 'name' => strval($s_session + $i) . "-" . strval($e_session + $i),
                 'status' => 'inactive'
@@ -73,8 +80,8 @@ class FinalController extends Controller
         $batchSize = 100;
         $values = [];
 
-        while ($start <= 316) {
-            $end = min($start + $batchSize - 1, 316);
+        while ($start <= 324) {
+            $end = min($start + $batchSize - 1, 324);
             for ($i = $start; $i <= $end; $i++) {
                 $values[] = [
                     'role_id' => '2',
