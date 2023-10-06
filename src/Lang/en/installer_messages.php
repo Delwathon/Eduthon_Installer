@@ -218,8 +218,10 @@ return [
             ],
             'form' => [
                 'app_url_required' => 'An App URL is required.',
-                'app_url_label' => 'App URL',
-                'app_url_placeholder' => 'Enter your app url...',
+                'client_url_label' => 'Client App Url',
+                'backend_url_label' => 'Backend App Url',
+                'client_url_placeholder' => 'Client App Url',
+                'backend_url_placeholder' => 'Backend App Url',
                 'app_email_required' => 'App Login Email is required.',
                 'app_email_label' => 'App Login Email',
                 'app_email_placeholder' => 'Enter your app login email address...',
