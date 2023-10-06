@@ -169,7 +169,8 @@
                     <div class="sec5div1">
                         <div class="form-group {{ $errors->has('app_url') ? ' has-error ' : '' }}">
                             <label class="sec5label1" for="app_url">
-                                {{ trans('installer_messages.environment.wizard.form.backend_url_label') }}
+                                {{-- {{ trans('installer_messages.environment.wizard.form.backend_url_label') }} --}}
+                                Backend App URL
                             </label>
                             <input type="url" name="app_url" class="sec5in1" id="app_url"
                                 value="{{ url('/') }}"
