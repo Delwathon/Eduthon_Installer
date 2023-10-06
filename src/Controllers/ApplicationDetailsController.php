@@ -5,6 +5,7 @@ namespace Delwathon\LaravelInstaller\Controllers;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Cookie;
 use Validator;
 
 class ApplicationDetailsController extends Controller
@@ -28,6 +29,8 @@ class ApplicationDetailsController extends Controller
      */
     public function applicationDetailsSave(Request $request, Redirector $redirect)
     {
+        setcookie('application_details', '', 1 );
+        unset($_COOKIE['application_details']);
         $rules = config('installer.application_details.form.rules');
         $messages = [
             'application_details.required' => trans('installer_messages.application_details.menu.form.name_required'),

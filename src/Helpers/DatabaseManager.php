@@ -68,6 +68,7 @@ class DatabaseManager
     private function passport(BufferedOutput $outputLog)
     {
         try {
+            shell_exec('php ../artisan migrate');
             shell_exec('php ../artisan passport:install');
         } catch (Exception $e) {
             return $this->response($e->getMessage(), 'error', $outputLog);
