@@ -28,9 +28,9 @@ class FinalController extends Controller
     {
         $details = json_decode($_COOKIE['application_details']);
         if($details->owner_gender === 'Male') {
-            $image = $details->app_url +'images/avatar/avatar-male.jpg';
+            $image = $details->app_url . 'images/avatar/avatar-male.jpg';
         } elseif($details->owner_gender === 'Female') {
-            $image = $details->app_url +'images/avatar/avatar-female.jpg';
+            $image = $details->app_url . 'images/avatar/avatar-male.jpg';
         }
 
         GlobalSetting::create([
