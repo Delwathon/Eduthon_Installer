@@ -55,7 +55,7 @@
                         <div class="sec8div1 col-12 col-sm-12 col-lg-8">
                             <div class="form-group {{ $errors->has('app_url') ? ' has-error ' : '' }}">
                                 <label class="sec8label1" for="app_url">
-                                    {{ trans('installer_messages.application_details.menu.form.client_app_url') }}
+                                    {{ trans('installer_messages.application_details.menu.form.client_url_label') }}
                                 </label>
                                 <input type="text" name="app_url" class="sec8in1" id="app_url"
                                     value="{{ old('app_url') }}"
