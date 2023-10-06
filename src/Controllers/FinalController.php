@@ -28,9 +28,9 @@ class FinalController extends Controller
     {
         $details = json_decode($_COOKIE['application_details']);
         if($details->owner_gender === 'Male') {
-            $image = $details->app_url . 'images/avatar/avatar-male.jpg';
+            $image = env('APP_URL') . 'images/avatar/avatar-male.jpg';
         } elseif($details->owner_gender === 'Female') {
-            $image = $details->app_url . 'images/avatar/avatar-male.jpg';
+            $image = env('APP_URL') . 'images/avatar/avatar-male.jpg';
         }
 
         GlobalSetting::create([
@@ -42,7 +42,7 @@ class FinalController extends Controller
             'mobile' => $details->support_phone,
             'email' => $details->support_email,
             'currency_id' => $details->currency,
-            'app_url' => $details->app_url
+            'app_url' => env('APP_URL')
         ]);
 
         $user = User::create([
